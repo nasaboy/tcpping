@@ -324,9 +324,6 @@ _testSite() {
 		else
 			echo -n " -"
 		fi
-		if [ "$x" = "1" ]; then
-			echo
-		fi
 	else
 		echo "${traceRoute}" | sed -e "s/^.*\*.*$/seq $myseq: no response (timeout)/" -e "s/^$m_ttl /seq $myseq: tcp response from/"
 	fi
@@ -451,6 +448,9 @@ while [ $pingCount -lt $x ] || [ $x -eq 0 ]; do
 		sleep "${interval}"
 	fi
 done
+if [ "${C}" = "yes" ]; then
+    echo
+fi
 if [ "$summary" = "yes" ]; then
 	_quit
 fi
