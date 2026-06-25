@@ -123,8 +123,8 @@ usage () {
 	echo "        -z            show what command is actually sent to traceroute (debug)"
 	echo "        -Z            run traceroute with sudo"
 	echo "        -o            Output ping like statistics"
-	echo "	      -4            Force IPv4, only works on traceroute"
-	echo "	      -6            Force IPv6, only works on traceroute"
+	echo "        -4            Force IPv4, only works on traceroute"
+	echo "        -6            Force IPv6, only works on traceroute"
 	echo
 	echo "Default port is 80"
 	echo "See also: man traceroute"
